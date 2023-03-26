@@ -1,0 +1,1776 @@
+/* FELLES */ 
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F9F7F6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex; 
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+nav ul{
+    padding-top: 30px;
+    flex-wrap: nowrap;
+   
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px; 
+    padding-right: 30px; 
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hamburger{
+    display: none; 
+    margin-left: 120px; 
+}
+
+.bar {
+    display: block; 
+    width: 25px; 
+    height: 3px; 
+    margin: 5px auto; 
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke; 
+}
+
+.menu:hover{
+    opacity: 50%;
+    
+}
+
+.logo:hover{
+    opacity: 50%;
+    transition: opacity 250ms ease;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: opacity;
+}
+
+.mobilmenu {
+    display: none; 
+}
+
+.menu-arrow{
+    width: 10px; 
+    padding-bottom: 2px; 
+    padding-left: 3px;
+}
+
+
+.logo img{
+    width: 150px;
+    padding-left: 70px;
+}
+
+.button{
+    background-color: #C9572A;
+    border: 1px solid #C9572A;
+    padding: 10px 10px; 
+    border-radius: 6px;
+    margin-right: 70px;
+    margin-top: 30px;  
+    color: #F5F5F5; 
+    min-width: 80px;
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.button:hover{
+    border: 1px solid #C9572A;
+    background-color: transparent;
+    color: black;
+}
+
+.tjenester-nedtrekk {
+    display: none; 
+    background-color: #C95629;
+    position: absolute;
+    padding-top: 0;
+}
+
+
+.tjenester-nedtrekk li {
+    display: block; 
+    padding: 8px 8px 5px 5px; 
+    color: #F5F5F5;
+}
+
+.tjenester-nedtrekk a {
+        display: block;
+        position: relative;
+}
+
+.tjenester-nedtrekk li:hover {
+    background-color: #dc6b3f;
+}
+
+.menu:hover {
+    background:
+}
+
+ul li:hover ul.tjenester-nedtrekk {
+    display: block; 
+}
+
+
+
+
+/* INDEX */ 
+
+.bakgrunn{
+    background-image: url("../Visuals/Bilder/background-image.png");
+    background-size: cover;
+    width: 100%;
+    height: 570px; 
+    padding-top: 50px;
+}
+
+.tekstboks p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.overskrift{
+    font-size: 50px; 
+    padding-top: 50px; 
+}
+
+.underoverskrift{
+    font-size: 20.5px;
+    padding-bottom: 45px; 
+}
+
+.tekstboks{
+    width: 80%; 
+    height: 400px; 
+    background-color: rgba(0,0,0,0.3);
+    margin: auto; 
+    padding-top: 80px;
+    border-radius: 34px; 
+}
+
+.scroll-pil {
+    margin-left: 49%; 
+    padding-top: 150px; 
+    justify-content: center;
+}
+
+.menu-arrow2 {
+    width: 20px; 
+}
+
+.menu-arrow2:hover {
+    transform: scale(1.3);
+    transition: all .2s ease-in-out;
+}
+
+.button2{
+    margin: auto; 
+    background-color: #C9572A;
+    border: 1px solid #C9572A;
+    border-radius: 6px;
+    color: #F5F5F5; 
+    padding: 10px 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500; 
+    width: 150px;
+    text-align: center;
+
+}
+
+.button2:hover{
+    border: 1px solid #C9572A;
+    background-color: transparent;
+}
+
+/* BILDEKARUSELL */ 
+
+.beholder {
+    padding: 6rem; 
+    }
+    
+    .innhold-samler {
+    position: relative; 
+    max-width: 38rem; 
+    margin: 0 auto; 
+    }
+    
+    .slider {
+        display: flex; 
+        aspect-ratio: 16 / 9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        Box-shadow: 0 0.1rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 20px; 
+    }
+    
+    .slider img {
+        flex: 1 0 100%; 
+        scroll-snap-align: start;
+        object-fit: cover; 
+    }
+    
+    .slider-nav {
+        display: flex; 
+        column-gap: 1rem; 
+        position: absolute; 
+        bottom: 1.25rem; 
+        left: 50%; 
+        transform: translateX(-50%);
+        z-index: 1; 
+    }
+    
+    .slider-nav a {
+        width: 0.5rem; 
+        height: 0.5rem; 
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 75%;
+        transition: opacity ease 0.250ms; 
+    }
+    
+    .slider-nav a:hover {
+        opacity: 100%   ;
+    }
+    
+
+
+
+/* TJENESTER */ 
+
+.tjenester2-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    background-color: white; 
+    padding: 30px 0px; 
+}
+
+.tjenester2-container img {
+    width: 400px; 
+}
+
+.tjenester2-container img:hover {
+    opacity: 60%;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+.tjenester2-container img:not(:hover){
+    opacity: 100%;
+    transition: 1s;
+}
+
+
+/* VÅTROM */ 
+
+.vatrom-mother {
+    display: flex; 
+    background-color: white; 
+}
+
+.vatrom-container{
+    background-color: white; 
+    padding-bottom: 50px; 
+}
+
+.vatrom-img {
+    width: 400px;
+    padding: 20px; 
+}
+
+.vatrom-img:hover {
+    opacity: 70%;
+}
+
+
+.tekst_vatrom {
+    background-color: white;; 
+    color: #4A4A4A;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 28px; 
+}
+
+h3{
+    color: #C95629;
+    margin-bottom: 20px; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.vatrom-knapp1, .vatrom-knapp2 {
+    text-align: center;
+    border: 1px solid #C9572A;
+    border-radius: 6px; 
+    color: #4A4A4A; 
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 35px 20px 0px 0px; 
+    font-size: 12px; 
+    Font-weight: 500; 
+}
+
+.vatrom-knapp2:hover {
+    background-color: #C9572A; 
+    color: white; 
+}
+
+.vatrom-knapp1:hover {
+    background-color: #C9572A; 
+    color: white; 
+}
+
+
+
+/* TILBYGG */ 
+
+.tilbygg-mother {
+    display: flex; 
+    background-color: white;
+}
+
+.tilbygg-container {
+    background-color: white; 
+}
+
+.tilbygg-img {
+    width: 400px;
+    padding: 20px; 
+    background-color: white; 
+}
+
+.tilbygg-img:hover {
+    opacity: 70%;
+}
+
+.tekst_tilbygg {
+    background-color: white; 
+    color: #4A4A4A;
+    padding-top: 28px; 
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.tilbygg-knapp1, .tilbygg-knapp2 {
+    text-align: center;
+    border: 1px solid #C9572A;
+    border-radius: 6px; 
+    color: #4A4A4A; 
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 20px 20px 0px 0px;
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.tilbygg-knapp2:hover {
+background-color: #C9572A; 
+color: white; 
+}
+
+.tilbygg-knapp1:hover {
+background-color: #C9572A; 
+color: white; 
+}
+
+
+
+/* VEDLIKEHOLD */ 
+
+.vedlikehold-mother {
+    display: flex; 
+    background-color: white; 
+}
+
+.vedlikehold-container{
+    background-color: white; 
+    
+}
+
+.vedlikehold-img {
+    width: 400px;
+    background-color: white; 
+    padding: 20px; 
+}
+
+.vedlikehold-img:hover {
+    opacity: 70%;
+}
+
+.tekst_vedlikehold {
+    background-color: white; 
+    color: #4A4A4A;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 28px;
+}
+
+
+h3{
+    color: #C95629;
+    margin-bottom: 20px; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.vedlikehold-knapp1, .vedlikehold-knapp2 {
+        text-align: center;
+        border: 1px solid #C9572A;
+        border-radius: 6px; 
+        color: #4A4A4A; 
+        display: inline-block;
+        padding: 5px 12px;
+        margin: 28px 20px 0px 0px;
+        font-size: 12px;
+        font-weight: 500; 
+}
+
+
+.vedlikehold-knapp2:hover {
+    background-color: #C9572A; 
+    color: #D9D9D9; 
+}
+
+.vedlikehold-knapp1:hover {
+    background-color: #C9572A; 
+    color: #D9D9D9; 
+}
+
+
+/* PROSJEKTER */ 
+
+.top {
+    background-color: #D9D9D9;
+    text-align: center;
+    padding: 80px 0px 20px 0px;
+}
+
+.top p {
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 15px; 
+}
+
+.top a {
+    color: #C9572A;
+    font-size: 10px; 
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.skillelinje {
+    height: 1px; 
+    width: 530px; 
+    margin: 20px auto 10px auto; 
+    background-color: black; 
+    opacity: 15%;
+}
+
+.galleri-kategori {
+    padding: 2px 30px;
+    display: inline; 
+}
+
+.våtrom-overskrift {
+    text-align: center;
+    color: #C9572A;
+    background-color: #D9D9D9;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 40px; 
+    padding-bottom: 15px; 
+}
+
+.våtrom-galleri {
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 280px 280px;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.våtrom-galleri img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 10px; 
+}
+
+.tilbygg-overskrift {
+    text-align: center;
+    color: #C9572A;
+    background-color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 60px; 
+    padding-bottom: 15px; 
+}
+
+.tilbygg-galleri {
+    background-color: #4A4A4A;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 280px 280px;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.tilbygg-galleri img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 10px; 
+}
+
+.vedlikehold-overskrift {
+    text-align: center;
+    color: #C9572A;
+    background-color: #D9D9D9;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 60px; 
+    padding-bottom: 15px; 
+}
+
+.vedlikehold-galleri {
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 280px 280px;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.vedlikehold-galleri img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 10px; 
+}
+
+
+/* oss */ 
+
+.oss-container {
+    background-color: #4A4A4A;
+    display: flex; 
+    padding: 100px; 
+    justify-content: center;
+}
+
+.selskap {
+    background-color: #D9D9D9;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-selskap {
+    width: 150px; 
+    margin: auto; 
+    padding-top: 30px; 
+}
+
+.ansatte-container {
+    background-color: #4A4A4A;
+}
+
+.ansatte-overskrift {
+    font-weight: 600; 
+    padding: 40px 0px 10px 0px; 
+    color: #D9D9D9;
+    margin: auto; 
+    text-align: center;
+    font-size: 14px; 
+    font-weight: 400px; 
+}
+
+.ansatte-underline {
+    height: 1px;
+    background-color: #D9D9D9;
+    width: 60px; 
+    text-align: center;
+    margin: auto; 
+}
+
+.selskap-tekst {
+    width: 800px; 
+    line-height: 1.6; 
+    margin: 40px auto 40px auto; 
+}
+
+.oss {
+    display: flex;
+    width: 100%;
+    background-color: #4A4A4A;
+    padding-top: 45px;
+    padding-bottom: 50px; 
+}
+
+.joakim img {
+    width: 200px; 
+    margin-bottom: 20px; 
+}
+
+.espen img {
+    width: 200px; 
+    margin-bottom: 20px; 
+}
+
+.jean img {
+    width: 200px; 
+    margin-bottom: 20px; 
+}
+
+.joakim, .espen, .jean {
+    padding: 0px 50px; 
+    text-align: center;
+    vertical-align: middle;
+    background-color: #4A4A4A;
+    margin: 0px auto;
+}
+
+.tittel-container {
+    border: 1px solid #C95629;
+    border-radius: 6px;
+    padding: 10px; 
+    margin-bottom: 40px; 
+}
+
+.tittel {
+    font-weight: 200;
+    color: #D9D9D9;
+}
+
+.navn {
+    font-weight: 600;
+    color: #D9D9D9;
+}
+
+.tekst {
+    font-weight: 200;
+    color: #D9D9D9;
+    width: 350px; 
+    line-height: 1.6; 
+}
+
+
+/* FAQ */ 
+
+.FAQ-main {
+    background-color: #D9D9D9;
+}
+
+.faq-overskrift {
+    margin: auto; 
+    padding: 80px 0px 0px 0px; 
+}
+
+.faq-skillelinje {
+    height: 1px; 
+    width: 22px; 
+    background-color: black; 
+    opacity: 15%;
+    margin: 5px auto 20px auto; 
+}
+
+.faq-container {
+    display: flex; 
+    flex-direction: column;
+    vertical-align: middle;
+    color: #4A4A4A;
+    font-size: 12px; 
+    margin: auto; 
+    line-height: 1.6;
+}
+
+.q {
+    color: #C9572A;
+    font-weight: 500; 
+
+}
+
+.q1, .q2, .q3, .q4 {
+    width: 400px; 
+    margin: auto; 
+    padding: 20px 0px; 
+}
+
+.q4 {
+    padding-bottom: 100px; 
+}
+
+.q-skillelinje {
+    height: 1px; 
+    width: 400px; 
+    margin: 5px auto; 
+    background-color: black; 
+    opacity: 15%;
+}
+
+/* KONTAKT */ 
+
+.kontakt-main {
+    background-color: #D9D9D9;
+    color: #4A4A4A;
+}
+
+.form-overskrift {
+    background-color: #D9D9D9;
+    text-align: center;
+    padding-top: 80px; 
+    padding-bottom: 50px; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-overoverskrift {
+    font-weight: 600; 
+    color: #C95629;
+}
+
+.form-underoverskrift {
+    font-weight: 200;
+}
+
+.form-skillelinje {
+    height: 1px; 
+    width: 420px; 
+    margin: 10px auto; 
+    background-color: black; 
+    opacity: 15%;
+}
+
+.form-container {
+    display: flex; 
+    justify-content: center;
+    padding: 50px 20px; 
+    background-color: #D1D1D1;
+    margin-bottom: 50px; 
+    margin-left: 150px; 
+    margin-right: 150px; 
+    border-radius: 10px;
+
+}
+
+.form {
+    height: 400px;
+    width: 380px;
+    margin-right: 30px; 
+    margin-bottom: 50px; 
+}
+
+.form-tekst {
+    padding-left: 30px; 
+    padding-top: 15px; 
+    width: 350px; 
+    line-height: 1.6;
+}
+
+.form-tekst pre {
+    line-height: 1.6;
+}
+
+.form label {
+    font-weight: 300;
+}
+
+.input-field input {
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    height: 40px; 
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    border: none; 
+    margin-bottom: 10px; 
+    padding-left: 5px; 
+    color: #D9D9D9;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ABABAB;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ABABAB;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ABABAB;
+  }
+
+.linje {
+    display: flex; 
+}
+
+.input-tlf{
+    margin-left: 10px; 
+    width: 100%;
+}
+
+.input-epost{
+    margin-right: 10px; 
+    width: 100%;
+}
+
+.input-melding input{
+    height: 100px; 
+}
+
+.input-field textarea {
+    resize: none; 
+    width: 100%;
+    height: 100px; 
+    background-color: #4A4A4A;
+    border: none; 
+    border-radius: 5px; 
+    padding-left: 5px; 
+    padding-top: 10px; 
+    color: #D9D9D9;
+}
+
+.input-button {
+    padding: 5px 10px; 
+    margin-top: 20px; 
+    background-color: #C95629;
+    border: 1px solid #C95629;
+    border-radius: 5px; 
+    color: #D9D9D9;
+    cursor: pointer; 
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.input-button:hover {
+    background-color: transparent; 
+    color: #4A4A4A;
+}
+
+/* FOOTER */ 
+
+.footer{
+    width: 100%; 
+    height: 150px; 
+    background-color: #323131;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+}
+
+.footer img{ 
+    width: 30px; 
+}
+
+.footer img:hover{ 
+    opacity: 50%;
+    transition: opacity 250ms ease;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: opacity;
+}
+
+.footer-tekst {
+    text-align: center;
+    background-color: #323131;
+    color: #D9D9D9;
+    font-size: 10px;
+    padding-bottom: 20px; 
+    justify-content: center;
+}
+
+.martin-link:hover {
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PHONE */ 
+
+
+@media all and (max-width: 500px) {
+
+/* NAVBAR */ 
+
+nav{
+    display: flex; 
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.menu-arrow {
+    display: none; 
+}
+
+nav ul{
+    display: none; 
+}
+
+.button{
+    display: none; 
+}
+        
+.logo img{
+    width: 120px;
+    padding-left: 50px;
+}
+
+.hamburger{
+    display: block; 
+}
+
+.bar {
+    display: block; 
+    width: 25px; 
+    height: 3px; 
+    margin: 5px auto; 
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black; 
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.mobilmenu {
+    display: block; 
+    width: 100%; 
+    text-align: center;
+    background-color: #4A4A4A;
+    color: #D9D9D9;
+    position: fixed;
+    right: -100%;
+    transition: 0.5s; 
+}
+
+.mobilmenu li {
+    padding: 20px; 
+    border-bottom: 1px solid rgb(128, 128, 128, 0.3); 
+    list-style: none; 
+}
+
+.mobilmenu.active {
+    right: 0;
+}
+
+
+
+
+    /* INDEX */ 
+    
+    .bakgrunn{
+        background-image: url("../Visuals/Bilder/background-image.png");
+        background-size: cover;
+        width: 100%;
+        height: 520px; 
+        padding-top: 50px;
+    }
+    
+    .tekstboks p{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: #F5F5F5;
+    }
+    
+    .overskrift{
+        font-size: 30px; 
+        padding-top: 50px; 
+    }
+
+    .tekstboks .overskrift {
+        font-weight: 500;
+    }
+    
+    .underoverskrift{
+        font-size: 14px;
+        padding-bottom: 45px; 
+    }
+    
+    .tekstboks{
+        width: 80%; 
+        height: 350px; 
+        background-color: rgba(0,0,0,0.3);
+        margin: auto; 
+        padding-top: 80px;
+        border-radius: 34px; 
+    }
+    
+    .scroll-pil {
+        margin-left: 49%; 
+        padding-top: 150px; 
+        justify-content: center;
+    }
+    
+    .menu-arrow2 {
+        width: 15px; 
+    }
+    
+    .button2{
+        margin: auto; 
+        background-color: #C9572A;
+        border: 1px solid #C9572A;
+        border-radius: 6px;
+        color: #F5F5F5; 
+        padding: 10px 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 500; 
+        width: 150px;
+        text-align: center;
+    
+    }
+    
+    /* BILDEKARUSELL */ 
+
+    
+    .beholder {
+        padding: 2rem; 
+    }
+    
+    .innhold-samler {
+        position: relative; 
+        max-width: 38rem; 
+        margin: 0 auto; 
+    }
+    
+    .slider {
+        display: flex; 
+        aspect-ratio: 16 / 9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        Box-shadow: 0 0.1rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 20px; 
+    }
+    
+    .slider img {
+        flex: 1 0 100%; 
+        scroll-snap-align: start;
+        object-fit: cover; 
+    }
+    
+    .slider-nav {
+        display: flex; 
+        column-gap: 1rem; 
+        position: absolute; 
+        bottom: 1.25rem; 
+        left: 50%; 
+        transform: translateX(-50%);
+        z-index: 1; 
+    }
+    
+    .slider-nav a {
+        width: 0.5rem; 
+        height: 0.5rem; 
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 75%;
+        transition: opacity ease 0.250ms; 
+    }
+    
+  
+    
+
+
+/* TJENESTER */ 
+
+.tjenester2-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-color: white; 
+    padding: 30px 0px; 
+    align-items: center;
+}
+
+.tjenester2-container img {
+    width: 340px; 
+    
+}
+
+.tjenester2-container img:hover {
+    opacity: 60%;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+.tjenester2-container img:not(:hover){
+    opacity: 100%;
+    transition: 1s;
+}
+
+ul li:hover ul.tjenester-nedtrekk {
+    display: none; 
+}
+
+/* VÅTROM */ 
+
+.vatrom-mother {
+    display: flex; 
+    flex-direction: column;
+    background-color: white; 
+}
+
+.vatrom-container{
+    background-color: white; 
+    padding-bottom: 10px; 
+}
+
+.vatrom-img {
+    width: 340px;
+    padding: 20px; 
+}
+
+
+.tekst_vatrom {
+    background-color: white;; 
+    color: #4A4A4A;
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 40px; 
+}
+
+h3{
+    color: #C95629;
+    margin-bottom: 20px; 
+    font-weight: 500;
+    font-size: 14px; 
+}
+
+.vatrom-knapp1, .vatrom-knapp2 {
+    text-align: center;
+    border: 1px solid #C9572A;
+    border-radius: 6px; 
+    color: #4A4A4A; 
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 35px 20px 20px 0px; 
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.vatrom-knapp2:hover {
+    background-color: #C9572A; 
+    color: white; 
+}
+
+.vatrom-knapp1:hover {
+    background-color: #C9572A; 
+    color: white; 
+}
+
+
+
+
+/* TILBYGG */ 
+
+.tilbygg-mother {
+    display: flex; 
+    flex-direction: column;
+    background-color: white;
+}
+
+.tilbygg-container {
+    background-color: white; 
+}
+
+.tilbygg-img {
+    width: 340px;
+    padding: 20px; 
+    background-color: white; 
+}
+
+.tekst_tilbygg {
+    background-color: white;; 
+    color: #4A4A4A;
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 40px; 
+}
+
+
+.tilbygg-knapp1, .tilbygg-knapp2 {
+    text-align: center;
+    border: 1px solid #C9572A;
+    border-radius: 6px; 
+    color: #4A4A4A; 
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 35px 20px 20px 0px; 
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.tilbygg-knapp2:hover {
+background-color: #C9572A; 
+color: white; 
+}
+
+.tilbygg-knapp1:hover {
+background-color: #C9572A; 
+color: white; 
+}
+
+/* VEDLIKEHOLD */ 
+
+.vedlikehold-mother {
+    display: flex; 
+    flex-direction: column;
+    background-color: white; 
+}
+
+.vedlikehold-container{
+    background-color: white; 
+    
+}
+
+.vedlikehold-img {
+    width: 340px;
+    background-color: white; 
+    padding: 20px; 
+}
+
+
+.tekst_vedlikehold {
+    background-color: white;; 
+    color: #4A4A4A;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0px 40px; 
+}
+
+
+h3{
+    color: #C95629;
+    margin-bottom: 20px; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.vedlikehold-knapp1, .vedlikehold-knapp2 {
+        text-align: center;
+        border: 1px solid #C9572A;
+        border-radius: 6px; 
+        color: #4A4A4A; 
+        display: inline-block;
+        padding: 5px 12px;
+        margin: 35px 20px 20px 0px;
+        font-size: 12px;
+        font-weight: 500; 
+}
+
+/* oss */ 
+
+.selskap {
+    background-color: #D9D9D9;
+    text-align: center;
+}
+
+.selskap-tekst {
+    width: 300px; 
+    line-height: 1.6; 
+    margin: 40px auto 40px auto; 
+}
+
+.ansatte-container {
+    background-color: #4A4A4A;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ansatte-overskrift {
+    font-weight: 600; 
+    padding: 40px 0px 10px 0px; 
+    color: #D9D9D9;
+    margin: auto; 
+    text-align: center;
+}
+
+.ansatte-underline {
+    height: 1px;
+    background-color: #D9D9D9;
+    width: 60px; 
+    text-align: center;
+    margin: auto; 
+}
+
+
+.oss {
+    background-color: #4A4A4A;
+    display: flex; 
+    flex-direction: column;
+    padding-top: 0; 
+}
+
+.joakim, .espen, .jean {
+    padding-top: 30px;
+
+}
+
+.joakim img {
+    width: 200px; 
+}
+
+.tittel-container {
+    border: 1px solid #C95629;
+    border-radius: 6px;
+    padding: 10px; 
+    margin-bottom: 40px;  
+}
+
+.tittel {
+    font-weight: 200;
+    color: #D9D9D9;
+}
+
+.navn {
+    font-weight: 600;
+    color: #D9D9D9;
+}
+
+.tekst {
+    font-weight: 200;
+    color: #D9D9D9;
+    width: 280px;
+    line-height: 1.6; 
+    padding-bottom: 30px; 
+    border-bottom: 1px solid grey;
+}
+
+
+/* PROSJEKTER */ 
+
+.top {
+    background-color: #D9D9D9;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+}
+
+.top p {
+    color: #4A4A4A;
+    margin-bottom: 15px; 
+    font-size: 14px;
+    font-weight: 500;  
+}
+
+.top a {
+    display: flex; 
+    justify-content: center;
+    color: #D9D9D9;
+    background-color: #C9572A;
+    border-radius: 6px;
+    width: 180px; 
+    padding: 10px; 
+    font-size: 10px; 
+    font-weight: 600;
+    margin: auto; 
+    text-decoration: none;
+    
+}
+
+.skillelinje {
+    height: 1px; 
+    width: 200px; 
+    margin: 30px auto 0 auto; 
+    background-color: #4A4A4A; 
+    opacity: 15%;
+}
+
+.galleri-kategori {
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+.våtrom-overskrift {
+    text-align: center;
+    color: #C9572A;
+    background-color: #D9D9D9;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 20px; 
+    padding-bottom: 15px; 
+}
+
+.våtrom-galleri {
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 280px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.våtrom-galleri img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 10px; 
+}
+
+.tilbygg-overskrift {
+    text-align: center;
+    color: #C9572A;
+    background-color: #4A4A4A;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 30px; 
+    padding-bottom: 15px; 
+}
+
+.tilbygg-galleri {
+    background-color: #4A4A4A;
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 280px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.tilbygg-galleri img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 10px; 
+}
+
+.vedlikehold-overskrift {
+    text-align: center;
+    color: #C9572A;
+    background-color: #D9D9D9;
+    font-weight: 800;
+    padding-top: 30px; 
+    padding-bottom: 15px; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.vedlikehold-galleri {
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 280px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.vedlikehold-galleri img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 10px; 
+}
+
+/* FAQ */ 
+
+.FAQ-main {
+    background-color: #D9D9D9;
+}
+
+.faq-overskrift {
+    margin: auto; 
+    padding: 40px 0px 0px 0px; 
+}
+
+.faq-skillelinje {
+    height: 1px; 
+    width: 22px; 
+    background-color: #4A4A4A; 
+    opacity: 15%;
+    margin: 5px auto 20px auto; 
+}
+
+.faq-container {
+    display: flex; 
+    flex-direction: column;
+    vertical-align: middle;
+    color: #4A4A4A;
+    font-size: 12px; 
+    margin: auto; 
+    line-height: 1.6;
+}
+
+.q {
+    color: #C9572A;
+    font-weight: 500; 
+
+}
+
+.q1, .q2, .q3, .q4 {
+    width: 300px; 
+    margin: auto; 
+    padding: 20px 0px; 
+}
+
+.q4 {
+    padding-bottom: 70px; 
+}
+
+.q-skillelinje {
+    height: 1px; 
+    width: 300px; 
+    margin: 5px auto; 
+    background-color: #4A4A4A; 
+    opacity: 15%;
+}
+
+/* KONTAKT */ 
+
+.kontakt-main {
+    background-color: #D9D9D9;
+    color: #4A4A4A;
+}
+
+.form-overskrift {
+    background-color: #D9D9D9;
+    text-align: center;
+    padding-top: 30px; 
+    padding-bottom: 20px; 
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-overoverskrift {
+    font-weight: 600; 
+    color: #C95629;
+    width: 200px; 
+    padding-bottom: 5px; 
+    margin: auto; 
+}
+
+.form-underoverskrift {
+    font-weight: 400;
+    width: 240px; 
+    margin: 0px auto;
+}
+
+.form-skillelinje {
+    height: 1px; 
+    width: 300px; 
+    margin: 15px auto; 
+    background-color: #4A4A4A; 
+    opacity: 15%;
+}
+
+.form-container {
+    display: flex; 
+    flex-direction: column-reverse;
+    padding: 50px; 
+    background-color: #D9D9D9;
+    margin-bottom: 50px; 
+    margin: 0px auto 50px auto; 
+    padding: 0px; 
+    width: 100%; 
+}
+
+.form {
+    height: 400px;
+    width: 280px;
+    margin-bottom: 50px; 
+    margin: 30px auto 50px auto; 
+   vertical-align: middle;
+}
+
+.form-tekst {
+    padding-top: 15px; 
+    padding-left: 0px; 
+    width: 80%;
+    line-height: 1.6;
+    text-align: center;
+    margin: auto; 
+    font-size: 14px;
+    font-weight: 400;
+   
+}
+
+.form label {
+    font-weight: 300;
+}
+
+.input-field input {
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    height: 40px; 
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    border: none; 
+    margin-bottom: 10px; 
+    padding-left: 5px; 
+    color: #D9D9D9;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ABABAB;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ABABAB;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ABABAB;
+  }
+
+.linje {
+    display: flex; 
+}
+
+.input-tlf{
+    margin-left: 10px; 
+    width: 100%;
+}
+
+.input-epost{
+    margin-right: 10px; 
+    width: 100%;
+}
+
+.input-melding input{
+    height: 100px; 
+}
+
+.input-field textarea {
+    resize: none; 
+    width: 100%;
+    height: 100px; 
+    background-color: #4A4A4A;
+    border: none; 
+    border-radius: 5px; 
+    padding-left: 5px; 
+    padding-top: 10px; 
+    color: #D9D9D9;
+}
+
+.input-button {
+    padding: 5px 10px; 
+    margin-top: 20px; 
+    background-color: #C95629;
+    border: 1px solid #C95629;
+    border-radius: 5px; 
+    color: #D9D9D9;
+    cursor: pointer; 
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+/* FOOTER */ 
+
+.footer{
+    width: 100%; 
+    height: 70px; 
+    background-color: #323131;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+.footer img{ 
+    width: 20px; 
+}
+
+.footer-tekst {
+    text-align: center;
+    background-color: #323131;
+    color: #D9D9D9;
+    font-size: 8px;
+    padding-bottom: 20px; 
+    padding-top: 8px;
+    justify-content: center;
+}
+
+}
+
+
+

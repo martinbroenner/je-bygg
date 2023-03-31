@@ -145,7 +145,7 @@ ul li:hover ul.tjenester-nedtrekk {
 .bakgrunn{
     background-image: url("/../Visuals/Bilder/background_image.png");
     background-size: cover;
-    width: 100%;
+    width: 15%;
     height: 570px; 
     padding-top: 50px;
 }

@@ -143,7 +143,7 @@ ul li:hover ul.tjenester-nedtrekk {
 /* INDEX */ 
 
 .bakgrunn{
-    background-image: url("../Visuals/Bilder/background-image.png");
+    background-image: url("/Bilder/background-image.png");
     background-size: cover;
     height: 570px; 
     padding-top: 50px;

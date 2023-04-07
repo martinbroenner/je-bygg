@@ -133,10 +133,6 @@ a{
     background-color: #dc6b3f;
 }
 
-.menu:hover {
-    background:
-}
-
 ul li:hover ul.tjenester-nedtrekk {
     display: block; 
 }
@@ -147,9 +143,9 @@ ul li:hover ul.tjenester-nedtrekk {
 /* INDEX */ 
 
 .bakgrunn{
-    background-image: url("../Visuals/Bilder/background-image.png");
+    background-image: url("../Visuals/Bilder/eiendom.png");
     background-size: cover;
-    width: 100%;
+    width: 15%;
     height: 570px; 
     padding-top: 50px;
 }
@@ -158,7 +154,7 @@ ul li:hover ul.tjenester-nedtrekk {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     text-align: center;
-    color: #F5F5F5;
+    color: #f5f5f6;
 }
 
 .overskrift{
@@ -936,6 +932,7 @@ h3{
 .martin-link:hover {
     opacity: 50%;
 }
+
 
 
 

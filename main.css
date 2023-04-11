@@ -1031,7 +1031,7 @@ nav ul{
     /* INDEX */ 
     
     .bakgrunn{
-        background-image: url("../Visuals/Bilder/background-image.png");
+        background-image: url("./Bilder/background-image.png");
         background-size: cover;
         width: 100%;
         height: 520px; 

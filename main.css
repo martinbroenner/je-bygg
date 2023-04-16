@@ -751,6 +751,27 @@ h3{
 
 /* KONTAKT */ 
 
+.mail-knapp {
+    margin: 15px auto; 
+    background-color: #C9572A;
+    border: 1px solid #C9572A;
+    border-radius: 6px;
+    color: #F5F5F5; 
+    padding: 10px 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500; 
+    width: 150px;
+    text-align: center;
+    
+}
+
+.mail-knapp:hover {
+    border: 1px solid #C9572A;
+    background-color: transparent;
+    color: black;
+}
+
 .kontakt-main {
     background-color: #D9D9D9;
     color: #4A4A4A;
@@ -759,8 +780,8 @@ h3{
 .form-overskrift {
     background-color: #D9D9D9;
     text-align: center;
-    padding-top: 80px; 
-    padding-bottom: 50px; 
+    padding-top: 40px; 
+    padding-bottom: 5px; 
     font-weight: 500;
     font-size: 14px;
 }
@@ -771,7 +792,7 @@ h3{
 }
 
 .form-underoverskrift {
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .form-skillelinje {
@@ -791,7 +812,6 @@ h3{
     margin-left: 150px; 
     margin-right: 150px; 
     border-radius: 10px;
-
 }
 
 .form {
@@ -805,6 +825,14 @@ h3{
     padding-left: 30px; 
     padding-top: 15px; 
     width: 350px; 
+    line-height: 1.6;
+}
+
+.form-tekst2 {
+    text-align: center;
+    width: 650px; 
+    margin: auto; 
+    padding-bottom: 50px; 
     line-height: 1.6;
 }
 
@@ -889,6 +917,28 @@ h3{
     color: #4A4A4A;
 }
 
+.footer-symbol-sort img{
+    width: 15px; 
+    margin-right: 4px; 
+    margin-bottom: -2px; 
+}
+
+.footer-symbol-sort {
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+.kontakt-symboler {
+ display: flex; 
+ font-size: 12px;
+ margin: auto; 
+ text-align: center;
+ font-size: 10px;
+ padding-bottom: 20px; 
+ justify-content: center;
+ 
+}
+
 /* FOOTER */ 
 
 .footer{
@@ -920,6 +970,7 @@ h3{
 }
 
 .footer-tekst {
+    display: flex; 
     text-align: center;
     background-color: #323131;
     color: #D9D9D9;
@@ -931,6 +982,30 @@ h3{
 .martin-link:hover {
     opacity: 50%;
 }
+
+.footer-symbol {
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+
+.footer-symbol img {
+    margin-right: 4px; 
+    margin-bottom: -5px; 
+}
+  
+  .footer-tekst img {
+    width: 15px; 
+  }
+
+ .kreditt {
+    background-color: #323131;
+    text-align: center;
+    color: #D9D9D9;
+    font-size: 8px; 
+    padding-bottom: 10px; 
+ }
+  
+
 
 
 
@@ -947,7 +1022,7 @@ h3{
 /* PHONE */ 
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 950px) {
 
 /* NAVBAR */ 
 
@@ -1003,6 +1078,8 @@ nav ul{
 .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
 }
+
+@media all and (max-width: 500px) {
 
 .mobilmenu {
     display: block; 
@@ -1605,7 +1682,7 @@ h3{
     background-color: #D9D9D9;
     text-align: center;
     padding-top: 30px; 
-    padding-bottom: 20px; 
+    padding-bottom: 5px; 
     font-size: 14px;
     font-weight: 500;
 }
@@ -1659,8 +1736,15 @@ h3{
     text-align: center;
     margin: auto; 
     font-size: 14px;
-    font-weight: 400;
-   
+    font-weight: 400;  
+}
+
+.form-tekst2 {
+    text-align: center;
+    width: 300px; 
+    margin: auto; 
+    padding-bottom: 50px; 
+    line-height: 1.6;
 }
 
 .form label {
@@ -1768,5 +1852,4 @@ h3{
 
 }
 
-
-
+}

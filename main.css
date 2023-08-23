@@ -1582,6 +1582,11 @@ h3{
     display: inline-block;
 }
 
+.galleri-kategori a {
+    width: 250px;
+    font-size: 14px;
+}
+
 .bilde-overskrift {
     text-align: center;
     color: #C9572A;
@@ -1654,7 +1659,7 @@ h3{
     flex-direction: column;
     vertical-align: middle;
     color: #4A4A4A;
-    font-size: 12px; 
+    font-size: 14px; 
     margin: auto; 
     line-height: 1.6;
 }
@@ -1690,10 +1695,14 @@ h3{
     color: #4A4A4A;
 }
 
+.mail-knapp{
+    margin-top: 30px; 
+}
+
 .form-overskrift {
     background-color: #D9D9D9;
     text-align: center;
-    padding-top: 30px; 
+    padding-top: 10px; 
     padding-bottom: 5px; 
     font-size: 14px;
     font-weight: 500;

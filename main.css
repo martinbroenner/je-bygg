@@ -102,6 +102,7 @@ a{
     min-width: 80px;
     font-size: 12px;
     font-weight: 500; 
+    text-align: center;
 }
 
 .button:hover{
@@ -112,7 +113,7 @@ a{
 
 .tjenester-nedtrekk {
     display: none; 
-    background-color: #C95629;
+    background-color: #C9572A;
     position: absolute;
     padding-top: 0;
 }
@@ -157,8 +158,8 @@ ul li:hover ul.tjenester-nedtrekk {
 
 .overskrift{
     font-size: 50px; 
-    padding-top: 50px; 
-    padding-bottom: 50px;
+    padding-top: 80px; 
+    padding-bottom: 30px;
     font-weight: 200;
 }
 
@@ -206,6 +207,9 @@ ul li:hover ul.tjenester-nedtrekk {
     background-color: transparent;
 }
 
+
+
+
 /* BILDEKARUSELL */ 
 
 .beholder {
@@ -226,13 +230,14 @@ ul li:hover ul.tjenester-nedtrekk {
         scroll-behavior: smooth;
         Box-shadow: 0 0.1rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
         border-radius: 20px; 
-  
+        max-width: 100%;
     }
     
     .slider img {
-        flex: 1 0 100%; 
+        flex: 1 0 auto; 
         scroll-snap-align: start;
         object-fit: cover; 
+        max-width: 100%;
     }
     
     .slider-nav {
@@ -758,6 +763,7 @@ margin: auto;
 .q {
     color: #C9572A;
     font-weight: 500; 
+    font-size: 14px;
 
 }
 
@@ -770,6 +776,10 @@ margin: auto;
 .q4 {
     padding-bottom: 100px; 
 }
+
+.q-svar {
+    font-size: 14px;
+ }   
 
 .q-skillelinje {
     height: 1px; 
@@ -864,6 +874,7 @@ margin: auto;
     margin: auto; 
     padding-bottom: 100px; 
     line-height: 1.6;
+    font-size: 14px; 
 }
 
 .form-tekst pre {
@@ -964,7 +975,7 @@ margin: auto;
  font-weight: 600;
  margin: auto; 
  text-align: center;
- padding-bottom: 20px; 
+ padding-bottom: 60px; 
  justify-content: center;
  
 }
@@ -1471,9 +1482,6 @@ h3{
     margin: auto; 
 }
 
-.ansatte-overskrift{
-    margin-bottom: 20px; 
-}
 
 .oss {
     border: none; 
@@ -1481,6 +1489,7 @@ h3{
     flex-direction: column;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    padding-top: 0px;
 }
 
 .styret-container {
@@ -1503,6 +1512,10 @@ h3{
     color: #D9D9D9;
     vertical-align: middle;
     line-height: 1.6;
+}
+
+.joakim {
+    margin-bottom: 50px; 
 }
 
 .joakim img{
@@ -1550,6 +1563,7 @@ h3{
 .fire-ansatte{
     margin-bottom: 20px;
     padding-bottom: 20px;
+    padding-top: 50px; 
 }
 
 
@@ -1634,6 +1648,10 @@ h3{
     background-color: #C7C6C6;
 }
 
+.tilbygg-bilder {
+    display: none; 
+}
+
 
 /* INGENIØR */ 
 
@@ -1682,7 +1700,6 @@ h3{
 .q {
     color: #C9572A;
     font-weight: 500; 
-
 }
 
 .q1, .q2, .q3, .q4 {

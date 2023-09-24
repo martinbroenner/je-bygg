@@ -224,7 +224,6 @@ ul li:hover ul.tjenester-nedtrekk {
     
     .slider {
         display: flex; 
-        aspect-ratio: 16 / 9;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
@@ -234,7 +233,7 @@ ul li:hover ul.tjenester-nedtrekk {
     }
     
     .slider img {
-        flex: 1 0 auto; 
+        flex: 1; 
         scroll-snap-align: start;
         object-fit: cover; 
         max-width: 100%;
